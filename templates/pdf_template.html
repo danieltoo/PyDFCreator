@@ -1,14 +1,49 @@
 <html>
     <head>
+    <meta charset="utf-8">
+    <title>{{data.nombre}}</title>
     </head>
     <body>
-    Tu nombre {{name}}
+    <div class="alert alert-success" style="background-color: blue;">
+	  <div class="container" align="left">
+	    
+	    <h3 >
+	    <img src="/home/deadpool/Escritorio/Paradigmas/Projects/Final/static/img/profile.png" width="50" height="50" >
+	    	<strong >
+	    		PYDF Creator: Ficha de identificación personal
+	    	</strong>
 
-    <br>
-    tu lugar {{location}}
-
-    <img src={{src}}>
-
+	    </h3>
+	  </div>
+	</div>
+    	<div class="row">
+		  <div class="col-xs-6 col-md-3">
+		    <a href="#" class="thumbnail">
+		      <img src={{src}}>
+		    </a>
+		  </div>
+		  <div class="col-xs-6 col-md-3">
+		    <a href="#" class="thumbnail">
+		       <h3>Datos Personales</h3>
+		      	<strong>
+			      	<br>
+			    	Nombre : {{data.nombre}} {{data.paterno}} {{data.materno}}
+			    	<br>
+			    	Sexo : {{data.sexo}}
+			    	<br>
+					Edad : {{data.edad}} años
+					<hr>
+					Curp: {{data.curp}}
+					<br>
+					Fecha de nacimiento: {{data.dia}}/{{data.mes}}/{{data.anio}}
+					<br>
+					Lugar de nacimiento: {{data.entidad}}	
+					<br>
+					Dirección: {{data.direccion}}
+				</strong>
+		    </a>
+		  </div>
+		</div>
     </body>
 </html>
 
